@@ -1,0 +1,779 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="tWebService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:3602/tWebService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:3602/tWebService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="itWebService_Get_TraineeProfile_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_TraineeProfile" />
+  </wsdl:message>
+  <wsdl:message name="itWebService_Get_TraineeProfile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_TraineeProfileResponse" />
+  </wsdl:message>
+  <wsdl:message name="itWebService_Get_TraineeList_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_TraineeList" />
+  </wsdl:message>
+  <wsdl:message name="itWebService_Get_TraineeList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_TraineeListResponse" />
+  </wsdl:message>
+  <wsdl:message name="itWebService_Get_TraineeRecord_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_TraineeRecord" />
+  </wsdl:message>
+  <wsdl:message name="itWebService_Get_TraineeRecord_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_TraineeRecordResponse" />
+  </wsdl:message>
+  <wsdl:message name="itWebService_Get_AvailableCourses_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_AvailableCourses" />
+  </wsdl:message>
+  <wsdl:message name="itWebService_Get_AvailableCourses_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_AvailableCoursesResponse" />
+  </wsdl:message>
+  <wsdl:message name="itWebService_Get_EnrolledTrainee_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_EnrolledTrainee" />
+  </wsdl:message>
+  <wsdl:message name="itWebService_Get_EnrolledTrainee_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_EnrolledTraineeResponse" />
+  </wsdl:message>
+  <wsdl:message name="itWebService_Get_TrainingCourses_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_TrainingCourses" />
+  </wsdl:message>
+  <wsdl:message name="itWebService_Get_TrainingCourses_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_TrainingCoursesResponse" />
+  </wsdl:message>
+  <wsdl:message name="itWebService_Get_AccountsReceivableHistory_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_AccountsReceivableHistory" />
+  </wsdl:message>
+  <wsdl:message name="itWebService_Get_AccountsReceivableHistory_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_AccountsReceivableHistoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="itWebService_Get_TotalAmountPaid_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_TotalAmountPaid" />
+  </wsdl:message>
+  <wsdl:message name="itWebService_Get_TotalAmountPaid_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_TotalAmountPaidResponse" />
+  </wsdl:message>
+  <wsdl:message name="itWebService_Get_TraineeAccountsReceivable_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_TraineeAccountsReceivable" />
+  </wsdl:message>
+  <wsdl:message name="itWebService_Get_TraineeAccountsReceivable_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_TraineeAccountsReceivableResponse" />
+  </wsdl:message>
+  <wsdl:message name="itWebService_GetUserPass_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserPass" />
+  </wsdl:message>
+  <wsdl:message name="itWebService_GetUserPass_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserPassResponse" />
+  </wsdl:message>
+  <wsdl:message name="itWebService_Get_UserAccessRights_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_UserAccessRights" />
+  </wsdl:message>
+  <wsdl:message name="itWebService_Get_UserAccessRights_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_UserAccessRightsResponse" />
+  </wsdl:message>
+  <wsdl:message name="itWebService_Get_UserAccount_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_UserAccount" />
+  </wsdl:message>
+  <wsdl:message name="itWebService_Get_UserAccount_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_UserAccountResponse" />
+  </wsdl:message>
+  <wsdl:message name="itWebService_Get_UserGroups_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_UserGroups" />
+  </wsdl:message>
+  <wsdl:message name="itWebService_Get_UserGroups_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_UserGroupsResponse" />
+  </wsdl:message>
+  <wsdl:message name="itWebService_Get_GroupRights_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_GroupRights" />
+  </wsdl:message>
+  <wsdl:message name="itWebService_Get_GroupRights_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_GroupRightsResponse" />
+  </wsdl:message>
+  <wsdl:message name="itWebService_Get_Gender_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Gender" />
+  </wsdl:message>
+  <wsdl:message name="itWebService_Get_Gender_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_GenderResponse" />
+  </wsdl:message>
+  <wsdl:message name="itWebService_Get_CivilStatus_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_CivilStatus" />
+  </wsdl:message>
+  <wsdl:message name="itWebService_Get_CivilStatus_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_CivilStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="itWebService_Get_SystemModules_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_SystemModules" />
+  </wsdl:message>
+  <wsdl:message name="itWebService_Get_SystemModules_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_SystemModulesResponse" />
+  </wsdl:message>
+  <wsdl:message name="itWebService_Get_Office_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Office" />
+  </wsdl:message>
+  <wsdl:message name="itWebService_Get_Office_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_OfficeResponse" />
+  </wsdl:message>
+  <wsdl:message name="itWebService_Get_Department_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Department" />
+  </wsdl:message>
+  <wsdl:message name="itWebService_Get_Department_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_DepartmentResponse" />
+  </wsdl:message>
+  <wsdl:message name="itWebService_Report_AccountsReceivable_All_InputMessage">
+    <wsdl:part name="parameters" element="tns:Report_AccountsReceivable_All" />
+  </wsdl:message>
+  <wsdl:message name="itWebService_Report_AccountsReceivable_All_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Report_AccountsReceivable_AllResponse" />
+  </wsdl:message>
+  <wsdl:message name="itWebService_Report_AccountsReceivable_Course_InputMessage">
+    <wsdl:part name="parameters" element="tns:Report_AccountsReceivable_Course" />
+  </wsdl:message>
+  <wsdl:message name="itWebService_Report_AccountsReceivable_Course_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Report_AccountsReceivable_CourseResponse" />
+  </wsdl:message>
+  <wsdl:message name="itWebService_Report_Sales_All_InputMessage">
+    <wsdl:part name="parameters" element="tns:Report_Sales_All" />
+  </wsdl:message>
+  <wsdl:message name="itWebService_Report_Sales_All_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Report_Sales_AllResponse" />
+  </wsdl:message>
+  <wsdl:message name="itWebService_Report_Sales_Course_InputMessage">
+    <wsdl:part name="parameters" element="tns:Report_Sales_Course" />
+  </wsdl:message>
+  <wsdl:message name="itWebService_Report_Sales_Course_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Report_Sales_CourseResponse" />
+  </wsdl:message>
+  <wsdl:message name="itWebService_Save_TraineeProfile_InputMessage">
+    <wsdl:part name="parameters" element="tns:Save_TraineeProfile" />
+  </wsdl:message>
+  <wsdl:message name="itWebService_Save_TraineeProfile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Save_TraineeProfileResponse" />
+  </wsdl:message>
+  <wsdl:message name="itWebService_Save_TraineeRegistration_InputMessage">
+    <wsdl:part name="parameters" element="tns:Save_TraineeRegistration" />
+  </wsdl:message>
+  <wsdl:message name="itWebService_Save_TraineeRegistration_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Save_TraineeRegistrationResponse" />
+  </wsdl:message>
+  <wsdl:message name="itWebService_Save_DropTrainee_InputMessage">
+    <wsdl:part name="parameters" element="tns:Save_DropTrainee" />
+  </wsdl:message>
+  <wsdl:message name="itWebService_Save_DropTrainee_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Save_DropTraineeResponse" />
+  </wsdl:message>
+  <wsdl:message name="itWebService_Save_TrainingCourses_InputMessage">
+    <wsdl:part name="parameters" element="tns:Save_TrainingCourses" />
+  </wsdl:message>
+  <wsdl:message name="itWebService_Save_TrainingCourses_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Save_TrainingCoursesResponse" />
+  </wsdl:message>
+  <wsdl:message name="itWebService_Save_Payments_InputMessage">
+    <wsdl:part name="parameters" element="tns:Save_Payments" />
+  </wsdl:message>
+  <wsdl:message name="itWebService_Save_Payments_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Save_PaymentsResponse" />
+  </wsdl:message>
+  <wsdl:message name="itWebService_Save_UserAccounts_InputMessage">
+    <wsdl:part name="parameters" element="tns:Save_UserAccounts" />
+  </wsdl:message>
+  <wsdl:message name="itWebService_Save_UserAccounts_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Save_UserAccountsResponse" />
+  </wsdl:message>
+  <wsdl:message name="itWebService_Save_UserGroups_InputMessage">
+    <wsdl:part name="parameters" element="tns:Save_UserGroups" />
+  </wsdl:message>
+  <wsdl:message name="itWebService_Save_UserGroups_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Save_UserGroupsResponse" />
+  </wsdl:message>
+  <wsdl:message name="itWebService_Save_GroupRights_InputMessage">
+    <wsdl:part name="parameters" element="tns:Save_GroupRights" />
+  </wsdl:message>
+  <wsdl:message name="itWebService_Save_GroupRights_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Save_GroupRightsResponse" />
+  </wsdl:message>
+  <wsdl:message name="itWebService_Save_UserProfile_InputMessage">
+    <wsdl:part name="parameters" element="tns:Save_UserProfile" />
+  </wsdl:message>
+  <wsdl:message name="itWebService_Save_UserProfile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Save_UserProfileResponse" />
+  </wsdl:message>
+  <wsdl:message name="itWebService_Save_Gender_InputMessage">
+    <wsdl:part name="parameters" element="tns:Save_Gender" />
+  </wsdl:message>
+  <wsdl:message name="itWebService_Save_Gender_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Save_GenderResponse" />
+  </wsdl:message>
+  <wsdl:message name="itWebService_Save_CivilStatus_InputMessage">
+    <wsdl:part name="parameters" element="tns:Save_CivilStatus" />
+  </wsdl:message>
+  <wsdl:message name="itWebService_Save_CivilStatus_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Save_CivilStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="itWebService_Save_SystemModules_InputMessage">
+    <wsdl:part name="parameters" element="tns:Save_SystemModules" />
+  </wsdl:message>
+  <wsdl:message name="itWebService_Save_SystemModules_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Save_SystemModulesResponse" />
+  </wsdl:message>
+  <wsdl:message name="itWebService_Save_Office_InputMessage">
+    <wsdl:part name="parameters" element="tns:Save_Office" />
+  </wsdl:message>
+  <wsdl:message name="itWebService_Save_Office_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Save_OfficeResponse" />
+  </wsdl:message>
+  <wsdl:message name="itWebService_Save_Department_InputMessage">
+    <wsdl:part name="parameters" element="tns:Save_Department" />
+  </wsdl:message>
+  <wsdl:message name="itWebService_Save_Department_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Save_DepartmentResponse" />
+  </wsdl:message>
+  <wsdl:message name="itWebService_Validate_Token_InputMessage">
+    <wsdl:part name="parameters" element="tns:Validate_Token" />
+  </wsdl:message>
+  <wsdl:message name="itWebService_Validate_Token_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Validate_TokenResponse" />
+  </wsdl:message>
+  <wsdl:message name="itWebService_Get_TransactionHistory_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_TransactionHistory" />
+  </wsdl:message>
+  <wsdl:message name="itWebService_Get_TransactionHistory_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_TransactionHistoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="itWebService_Save_TransactionHistory_InputMessage">
+    <wsdl:part name="parameters" element="tns:Save_TransactionHistory" />
+  </wsdl:message>
+  <wsdl:message name="itWebService_Save_TransactionHistory_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Save_TransactionHistoryResponse" />
+  </wsdl:message>
+  <wsdl:portType name="itWebService">
+    <wsdl:operation name="Get_TraineeProfile">
+      <wsdl:input wsaw:Action="http://tempuri.org/itWebService/Get_TraineeProfile" message="tns:itWebService_Get_TraineeProfile_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/itWebService/Get_TraineeProfileResponse" message="tns:itWebService_Get_TraineeProfile_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_TraineeList">
+      <wsdl:input wsaw:Action="http://tempuri.org/itWebService/Get_TraineeList" message="tns:itWebService_Get_TraineeList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/itWebService/Get_TraineeListResponse" message="tns:itWebService_Get_TraineeList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_TraineeRecord">
+      <wsdl:input wsaw:Action="http://tempuri.org/itWebService/Get_TraineeRecord" message="tns:itWebService_Get_TraineeRecord_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/itWebService/Get_TraineeRecordResponse" message="tns:itWebService_Get_TraineeRecord_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_AvailableCourses">
+      <wsdl:input wsaw:Action="http://tempuri.org/itWebService/Get_AvailableCourses" message="tns:itWebService_Get_AvailableCourses_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/itWebService/Get_AvailableCoursesResponse" message="tns:itWebService_Get_AvailableCourses_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_EnrolledTrainee">
+      <wsdl:input wsaw:Action="http://tempuri.org/itWebService/Get_EnrolledTrainee" message="tns:itWebService_Get_EnrolledTrainee_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/itWebService/Get_EnrolledTraineeResponse" message="tns:itWebService_Get_EnrolledTrainee_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_TrainingCourses">
+      <wsdl:input wsaw:Action="http://tempuri.org/itWebService/Get_TrainingCourses" message="tns:itWebService_Get_TrainingCourses_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/itWebService/Get_TrainingCoursesResponse" message="tns:itWebService_Get_TrainingCourses_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_AccountsReceivableHistory">
+      <wsdl:input wsaw:Action="http://tempuri.org/itWebService/Get_AccountsReceivableHistory" message="tns:itWebService_Get_AccountsReceivableHistory_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/itWebService/Get_AccountsReceivableHistoryResponse" message="tns:itWebService_Get_AccountsReceivableHistory_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_TotalAmountPaid">
+      <wsdl:input wsaw:Action="http://tempuri.org/itWebService/Get_TotalAmountPaid" message="tns:itWebService_Get_TotalAmountPaid_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/itWebService/Get_TotalAmountPaidResponse" message="tns:itWebService_Get_TotalAmountPaid_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_TraineeAccountsReceivable">
+      <wsdl:input wsaw:Action="http://tempuri.org/itWebService/Get_TraineeAccountsReceivable" message="tns:itWebService_Get_TraineeAccountsReceivable_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/itWebService/Get_TraineeAccountsReceivableResponse" message="tns:itWebService_Get_TraineeAccountsReceivable_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserPass">
+      <wsdl:input wsaw:Action="http://tempuri.org/itWebService/GetUserPass" message="tns:itWebService_GetUserPass_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/itWebService/GetUserPassResponse" message="tns:itWebService_GetUserPass_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_UserAccessRights">
+      <wsdl:input wsaw:Action="http://tempuri.org/itWebService/Get_UserAccessRights" message="tns:itWebService_Get_UserAccessRights_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/itWebService/Get_UserAccessRightsResponse" message="tns:itWebService_Get_UserAccessRights_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_UserAccount">
+      <wsdl:input wsaw:Action="http://tempuri.org/itWebService/Get_UserAccount" message="tns:itWebService_Get_UserAccount_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/itWebService/Get_UserAccountResponse" message="tns:itWebService_Get_UserAccount_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_UserGroups">
+      <wsdl:input wsaw:Action="http://tempuri.org/itWebService/Get_UserGroups" message="tns:itWebService_Get_UserGroups_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/itWebService/Get_UserGroupsResponse" message="tns:itWebService_Get_UserGroups_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_GroupRights">
+      <wsdl:input wsaw:Action="http://tempuri.org/itWebService/Get_GroupRights" message="tns:itWebService_Get_GroupRights_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/itWebService/Get_GroupRightsResponse" message="tns:itWebService_Get_GroupRights_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Gender">
+      <wsdl:input wsaw:Action="http://tempuri.org/itWebService/Get_Gender" message="tns:itWebService_Get_Gender_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/itWebService/Get_GenderResponse" message="tns:itWebService_Get_Gender_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_CivilStatus">
+      <wsdl:input wsaw:Action="http://tempuri.org/itWebService/Get_CivilStatus" message="tns:itWebService_Get_CivilStatus_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/itWebService/Get_CivilStatusResponse" message="tns:itWebService_Get_CivilStatus_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_SystemModules">
+      <wsdl:input wsaw:Action="http://tempuri.org/itWebService/Get_SystemModules" message="tns:itWebService_Get_SystemModules_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/itWebService/Get_SystemModulesResponse" message="tns:itWebService_Get_SystemModules_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Office">
+      <wsdl:input wsaw:Action="http://tempuri.org/itWebService/Get_Office" message="tns:itWebService_Get_Office_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/itWebService/Get_OfficeResponse" message="tns:itWebService_Get_Office_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Department">
+      <wsdl:input wsaw:Action="http://tempuri.org/itWebService/Get_Department" message="tns:itWebService_Get_Department_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/itWebService/Get_DepartmentResponse" message="tns:itWebService_Get_Department_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Report_AccountsReceivable_All">
+      <wsdl:input wsaw:Action="http://tempuri.org/itWebService/Report_AccountsReceivable_All" message="tns:itWebService_Report_AccountsReceivable_All_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/itWebService/Report_AccountsReceivable_AllResponse" message="tns:itWebService_Report_AccountsReceivable_All_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Report_AccountsReceivable_Course">
+      <wsdl:input wsaw:Action="http://tempuri.org/itWebService/Report_AccountsReceivable_Course" message="tns:itWebService_Report_AccountsReceivable_Course_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/itWebService/Report_AccountsReceivable_CourseResponse" message="tns:itWebService_Report_AccountsReceivable_Course_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Report_Sales_All">
+      <wsdl:input wsaw:Action="http://tempuri.org/itWebService/Report_Sales_All" message="tns:itWebService_Report_Sales_All_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/itWebService/Report_Sales_AllResponse" message="tns:itWebService_Report_Sales_All_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Report_Sales_Course">
+      <wsdl:input wsaw:Action="http://tempuri.org/itWebService/Report_Sales_Course" message="tns:itWebService_Report_Sales_Course_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/itWebService/Report_Sales_CourseResponse" message="tns:itWebService_Report_Sales_Course_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Save_TraineeProfile">
+      <wsdl:input wsaw:Action="http://tempuri.org/itWebService/Save_TraineeProfile" message="tns:itWebService_Save_TraineeProfile_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/itWebService/Save_TraineeProfileResponse" message="tns:itWebService_Save_TraineeProfile_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Save_TraineeRegistration">
+      <wsdl:input wsaw:Action="http://tempuri.org/itWebService/Save_TraineeRegistration" message="tns:itWebService_Save_TraineeRegistration_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/itWebService/Save_TraineeRegistrationResponse" message="tns:itWebService_Save_TraineeRegistration_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Save_DropTrainee">
+      <wsdl:input wsaw:Action="http://tempuri.org/itWebService/Save_DropTrainee" message="tns:itWebService_Save_DropTrainee_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/itWebService/Save_DropTraineeResponse" message="tns:itWebService_Save_DropTrainee_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Save_TrainingCourses">
+      <wsdl:input wsaw:Action="http://tempuri.org/itWebService/Save_TrainingCourses" message="tns:itWebService_Save_TrainingCourses_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/itWebService/Save_TrainingCoursesResponse" message="tns:itWebService_Save_TrainingCourses_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Save_Payments">
+      <wsdl:input wsaw:Action="http://tempuri.org/itWebService/Save_Payments" message="tns:itWebService_Save_Payments_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/itWebService/Save_PaymentsResponse" message="tns:itWebService_Save_Payments_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Save_UserAccounts">
+      <wsdl:input wsaw:Action="http://tempuri.org/itWebService/Save_UserAccounts" message="tns:itWebService_Save_UserAccounts_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/itWebService/Save_UserAccountsResponse" message="tns:itWebService_Save_UserAccounts_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Save_UserGroups">
+      <wsdl:input wsaw:Action="http://tempuri.org/itWebService/Save_UserGroups" message="tns:itWebService_Save_UserGroups_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/itWebService/Save_UserGroupsResponse" message="tns:itWebService_Save_UserGroups_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Save_GroupRights">
+      <wsdl:input wsaw:Action="http://tempuri.org/itWebService/Save_GroupRights" message="tns:itWebService_Save_GroupRights_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/itWebService/Save_GroupRightsResponse" message="tns:itWebService_Save_GroupRights_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Save_UserProfile">
+      <wsdl:input wsaw:Action="http://tempuri.org/itWebService/Save_UserProfile" message="tns:itWebService_Save_UserProfile_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/itWebService/Save_UserProfileResponse" message="tns:itWebService_Save_UserProfile_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Save_Gender">
+      <wsdl:input wsaw:Action="http://tempuri.org/itWebService/Save_Gender" message="tns:itWebService_Save_Gender_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/itWebService/Save_GenderResponse" message="tns:itWebService_Save_Gender_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Save_CivilStatus">
+      <wsdl:input wsaw:Action="http://tempuri.org/itWebService/Save_CivilStatus" message="tns:itWebService_Save_CivilStatus_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/itWebService/Save_CivilStatusResponse" message="tns:itWebService_Save_CivilStatus_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Save_SystemModules">
+      <wsdl:input wsaw:Action="http://tempuri.org/itWebService/Save_SystemModules" message="tns:itWebService_Save_SystemModules_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/itWebService/Save_SystemModulesResponse" message="tns:itWebService_Save_SystemModules_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Save_Office">
+      <wsdl:input wsaw:Action="http://tempuri.org/itWebService/Save_Office" message="tns:itWebService_Save_Office_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/itWebService/Save_OfficeResponse" message="tns:itWebService_Save_Office_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Save_Department">
+      <wsdl:input wsaw:Action="http://tempuri.org/itWebService/Save_Department" message="tns:itWebService_Save_Department_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/itWebService/Save_DepartmentResponse" message="tns:itWebService_Save_Department_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Validate_Token">
+      <wsdl:input wsaw:Action="http://tempuri.org/itWebService/Validate_Token" message="tns:itWebService_Validate_Token_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/itWebService/Validate_TokenResponse" message="tns:itWebService_Validate_Token_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_TransactionHistory">
+      <wsdl:input wsaw:Action="http://tempuri.org/itWebService/Get_TransactionHistory" message="tns:itWebService_Get_TransactionHistory_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/itWebService/Get_TransactionHistoryResponse" message="tns:itWebService_Get_TransactionHistory_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Save_TransactionHistory">
+      <wsdl:input wsaw:Action="http://tempuri.org/itWebService/Save_TransactionHistory" message="tns:itWebService_Save_TransactionHistory_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/itWebService/Save_TransactionHistoryResponse" message="tns:itWebService_Save_TransactionHistory_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_itWebService" type="tns:itWebService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Get_TraineeProfile">
+      <soap:operation soapAction="http://tempuri.org/itWebService/Get_TraineeProfile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_TraineeList">
+      <soap:operation soapAction="http://tempuri.org/itWebService/Get_TraineeList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_TraineeRecord">
+      <soap:operation soapAction="http://tempuri.org/itWebService/Get_TraineeRecord" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_AvailableCourses">
+      <soap:operation soapAction="http://tempuri.org/itWebService/Get_AvailableCourses" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_EnrolledTrainee">
+      <soap:operation soapAction="http://tempuri.org/itWebService/Get_EnrolledTrainee" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_TrainingCourses">
+      <soap:operation soapAction="http://tempuri.org/itWebService/Get_TrainingCourses" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_AccountsReceivableHistory">
+      <soap:operation soapAction="http://tempuri.org/itWebService/Get_AccountsReceivableHistory" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_TotalAmountPaid">
+      <soap:operation soapAction="http://tempuri.org/itWebService/Get_TotalAmountPaid" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_TraineeAccountsReceivable">
+      <soap:operation soapAction="http://tempuri.org/itWebService/Get_TraineeAccountsReceivable" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserPass">
+      <soap:operation soapAction="http://tempuri.org/itWebService/GetUserPass" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_UserAccessRights">
+      <soap:operation soapAction="http://tempuri.org/itWebService/Get_UserAccessRights" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_UserAccount">
+      <soap:operation soapAction="http://tempuri.org/itWebService/Get_UserAccount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_UserGroups">
+      <soap:operation soapAction="http://tempuri.org/itWebService/Get_UserGroups" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_GroupRights">
+      <soap:operation soapAction="http://tempuri.org/itWebService/Get_GroupRights" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Gender">
+      <soap:operation soapAction="http://tempuri.org/itWebService/Get_Gender" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_CivilStatus">
+      <soap:operation soapAction="http://tempuri.org/itWebService/Get_CivilStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_SystemModules">
+      <soap:operation soapAction="http://tempuri.org/itWebService/Get_SystemModules" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Office">
+      <soap:operation soapAction="http://tempuri.org/itWebService/Get_Office" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Department">
+      <soap:operation soapAction="http://tempuri.org/itWebService/Get_Department" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Report_AccountsReceivable_All">
+      <soap:operation soapAction="http://tempuri.org/itWebService/Report_AccountsReceivable_All" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Report_AccountsReceivable_Course">
+      <soap:operation soapAction="http://tempuri.org/itWebService/Report_AccountsReceivable_Course" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Report_Sales_All">
+      <soap:operation soapAction="http://tempuri.org/itWebService/Report_Sales_All" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Report_Sales_Course">
+      <soap:operation soapAction="http://tempuri.org/itWebService/Report_Sales_Course" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Save_TraineeProfile">
+      <soap:operation soapAction="http://tempuri.org/itWebService/Save_TraineeProfile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Save_TraineeRegistration">
+      <soap:operation soapAction="http://tempuri.org/itWebService/Save_TraineeRegistration" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Save_DropTrainee">
+      <soap:operation soapAction="http://tempuri.org/itWebService/Save_DropTrainee" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Save_TrainingCourses">
+      <soap:operation soapAction="http://tempuri.org/itWebService/Save_TrainingCourses" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Save_Payments">
+      <soap:operation soapAction="http://tempuri.org/itWebService/Save_Payments" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Save_UserAccounts">
+      <soap:operation soapAction="http://tempuri.org/itWebService/Save_UserAccounts" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Save_UserGroups">
+      <soap:operation soapAction="http://tempuri.org/itWebService/Save_UserGroups" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Save_GroupRights">
+      <soap:operation soapAction="http://tempuri.org/itWebService/Save_GroupRights" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Save_UserProfile">
+      <soap:operation soapAction="http://tempuri.org/itWebService/Save_UserProfile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Save_Gender">
+      <soap:operation soapAction="http://tempuri.org/itWebService/Save_Gender" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Save_CivilStatus">
+      <soap:operation soapAction="http://tempuri.org/itWebService/Save_CivilStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Save_SystemModules">
+      <soap:operation soapAction="http://tempuri.org/itWebService/Save_SystemModules" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Save_Office">
+      <soap:operation soapAction="http://tempuri.org/itWebService/Save_Office" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Save_Department">
+      <soap:operation soapAction="http://tempuri.org/itWebService/Save_Department" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Validate_Token">
+      <soap:operation soapAction="http://tempuri.org/itWebService/Validate_Token" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_TransactionHistory">
+      <soap:operation soapAction="http://tempuri.org/itWebService/Get_TransactionHistory" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Save_TransactionHistory">
+      <soap:operation soapAction="http://tempuri.org/itWebService/Save_TransactionHistory" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="tWebService">
+    <wsdl:port name="BasicHttpBinding_itWebService" binding="tns:BasicHttpBinding_itWebService">
+      <soap:address location="http://localhost:3602/tWebService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

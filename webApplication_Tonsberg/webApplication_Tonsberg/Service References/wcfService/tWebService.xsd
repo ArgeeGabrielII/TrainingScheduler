@@ -1,0 +1,688 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Get_TraineeProfile">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_Parameter" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_UserID" type="xs:int" />
+        <xs:element minOccurs="0" name="_Token" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Get_TraineeProfileResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Get_TraineeProfileResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Get_TraineeList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_UserID" type="xs:int" />
+        <xs:element minOccurs="0" name="_Token" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Get_TraineeListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Get_TraineeListResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Get_TraineeRecord">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="TraineeID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_UserID" type="xs:int" />
+        <xs:element minOccurs="0" name="_Token" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Get_TraineeRecordResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Get_TraineeRecordResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Get_AvailableCourses">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_Parameter" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_UserID" type="xs:int" />
+        <xs:element minOccurs="0" name="_Token" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Get_AvailableCoursesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Get_AvailableCoursesResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Get_EnrolledTrainee">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_Parameter" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_UserID" type="xs:int" />
+        <xs:element minOccurs="0" name="_Token" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Get_EnrolledTraineeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Get_EnrolledTraineeResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Get_TrainingCourses">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_Parameter" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_UserID" type="xs:int" />
+        <xs:element minOccurs="0" name="_Token" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Get_TrainingCoursesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Get_TrainingCoursesResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Get_AccountsReceivableHistory">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_CourseID" type="xs:int" />
+        <xs:element minOccurs="0" name="_TraineeID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_UserID" type="xs:int" />
+        <xs:element minOccurs="0" name="_Token" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Get_AccountsReceivableHistoryResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Get_AccountsReceivableHistoryResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Get_TotalAmountPaid">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_CourseID" type="xs:int" />
+        <xs:element minOccurs="0" name="_TraineeID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_UserID" type="xs:int" />
+        <xs:element minOccurs="0" name="_Token" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Get_TotalAmountPaidResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Get_TotalAmountPaidResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Get_TraineeAccountsReceivable">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="TraineeID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_UserID" type="xs:int" />
+        <xs:element minOccurs="0" name="_Token" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Get_TraineeAccountsReceivableResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Get_TraineeAccountsReceivableResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserPass">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Username" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Password" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserPassResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetUserPassResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Get_UserAccessRights">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GroupID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Get_UserAccessRightsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Get_UserAccessRightsResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Get_UserAccount">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_Parameter" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_UserID" type="xs:int" />
+        <xs:element minOccurs="0" name="_Token" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Get_UserAccountResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Get_UserAccountResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Get_UserGroups">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_Parameter" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_UserID" type="xs:int" />
+        <xs:element minOccurs="0" name="_Token" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Get_UserGroupsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Get_UserGroupsResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Get_GroupRights">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_Parameter" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_UserID" type="xs:int" />
+        <xs:element minOccurs="0" name="_Token" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Get_GroupRightsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Get_GroupRightsResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Get_Gender">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_Parameter" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_UserID" type="xs:int" />
+        <xs:element minOccurs="0" name="_Token" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Get_GenderResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Get_GenderResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Get_CivilStatus">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_Parameter" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_UserID" type="xs:int" />
+        <xs:element minOccurs="0" name="_Token" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Get_CivilStatusResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Get_CivilStatusResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Get_SystemModules">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_Parameter" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_UserID" type="xs:int" />
+        <xs:element minOccurs="0" name="_Token" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Get_SystemModulesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Get_SystemModulesResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Get_Office">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_Parameter" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_UserID" type="xs:int" />
+        <xs:element minOccurs="0" name="_Token" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Get_OfficeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Get_OfficeResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Get_Department">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_Parameter" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_UserID" type="xs:int" />
+        <xs:element minOccurs="0" name="_Token" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Get_DepartmentResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Get_DepartmentResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Report_AccountsReceivable_All">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_DateFrom" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_DateTo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_UserID" type="xs:int" />
+        <xs:element minOccurs="0" name="_Token" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Report_AccountsReceivable_AllResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Report_AccountsReceivable_AllResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Report_AccountsReceivable_Course">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_DateFrom" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_DateTo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_CourseID" type="xs:int" />
+        <xs:element minOccurs="0" name="_UserID" type="xs:int" />
+        <xs:element minOccurs="0" name="_Token" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Report_AccountsReceivable_CourseResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Report_AccountsReceivable_CourseResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Report_Sales_All">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_DateFrom" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_DateTo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_UserID" type="xs:int" />
+        <xs:element minOccurs="0" name="_Token" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Report_Sales_AllResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Report_Sales_AllResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Report_Sales_Course">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_DateFrom" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_DateTo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_CourseID" type="xs:int" />
+        <xs:element minOccurs="0" name="_UserID" type="xs:int" />
+        <xs:element minOccurs="0" name="_Token" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Report_Sales_CourseResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Report_Sales_CourseResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Save_TraineeProfile">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="TraineeID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="MiddleName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="LastName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="GenderID" type="xs:int" />
+        <xs:element minOccurs="0" name="CivilStatusID" type="xs:int" />
+        <xs:element minOccurs="0" name="ContactNo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="DateOfBirth" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Age" type="xs:int" />
+        <xs:element minOccurs="0" name="PlaceOfBirth" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Active" type="xs:boolean" />
+        <xs:element minOccurs="0" name="PositionRank" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="YearsOfSeaExperience" type="xs:int" />
+        <xs:element minOccurs="0" name="MarinaLicense" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="PRCLicense" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="SIRBNo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="PassportNo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="SRCNo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Others" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="EnrollmentDate" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_UserID" type="xs:int" />
+        <xs:element minOccurs="0" name="_Token" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Save_TraineeProfileResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Save_TraineeRegistration">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RegistrationID" type="xs:int" />
+        <xs:element minOccurs="0" name="DateRegistered" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="TraineeID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CourseID" type="xs:int" />
+        <xs:element minOccurs="0" name="CourseCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="DropTrainee" type="xs:boolean" />
+        <xs:element minOccurs="0" name="_UserID" type="xs:int" />
+        <xs:element minOccurs="0" name="_Token" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Save_TraineeRegistrationResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Save_DropTrainee">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="TraineeID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CourseID" type="xs:int" />
+        <xs:element minOccurs="0" name="RegistrationID" type="xs:int" />
+        <xs:element minOccurs="0" name="_UserID" type="xs:int" />
+        <xs:element minOccurs="0" name="_Token" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Save_DropTraineeResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Save_TrainingCourses">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CourseID" type="xs:int" />
+        <xs:element minOccurs="0" name="CourseCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CourseName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="TrainorName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="NoOfTrainees" type="xs:int" />
+        <xs:element minOccurs="0" name="TrainingDuration" type="xs:int" />
+        <xs:element minOccurs="0" name="TrainingStartDate" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Active" type="xs:boolean" />
+        <xs:element minOccurs="0" name="TrainingFee" type="xs:decimal" />
+        <xs:element minOccurs="0" name="AssessorName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_UserID" type="xs:int" />
+        <xs:element minOccurs="0" name="_Token" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Save_TrainingCoursesResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Save_Payments">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RegistrationID" type="xs:int" />
+        <xs:element minOccurs="0" name="AmountPaid" type="xs:decimal" />
+        <xs:element minOccurs="0" name="PaymentDetails" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_UserID" type="xs:int" />
+        <xs:element minOccurs="0" name="_Token" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Save_PaymentsResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Save_UserAccounts">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UserID" type="xs:int" />
+        <xs:element minOccurs="0" name="UserName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Password" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="LastName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="GroupID" type="xs:int" />
+        <xs:element minOccurs="0" name="EmailAddress" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Office" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="DepartmentID" type="xs:int" />
+        <xs:element minOccurs="0" name="Active" type="xs:boolean" />
+        <xs:element minOccurs="0" name="_UserID" type="xs:int" />
+        <xs:element minOccurs="0" name="_Token" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Save_UserAccountsResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Save_UserGroups">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ID" type="xs:int" />
+        <xs:element minOccurs="0" name="GroupName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Active" type="xs:boolean" />
+        <xs:element minOccurs="0" name="_UserID" type="xs:int" />
+        <xs:element minOccurs="0" name="_Token" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Save_UserGroupsResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Save_GroupRights">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GroupRightID" type="xs:int" />
+        <xs:element minOccurs="0" name="GroupID" type="xs:int" />
+        <xs:element minOccurs="0" name="ModuleID" type="xs:int" />
+        <xs:element minOccurs="0" name="CanView" type="xs:boolean" />
+        <xs:element minOccurs="0" name="CanEdit" type="xs:boolean" />
+        <xs:element minOccurs="0" name="CanDelete" type="xs:boolean" />
+        <xs:element minOccurs="0" name="_UserID" type="xs:int" />
+        <xs:element minOccurs="0" name="_Token" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Save_GroupRightsResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Save_UserProfile">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UserID" type="xs:int" />
+        <xs:element minOccurs="0" name="Password" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_UserID" type="xs:int" />
+        <xs:element minOccurs="0" name="_Token" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Save_UserProfileResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Save_Gender">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GenderID" type="xs:int" />
+        <xs:element minOccurs="0" name="GenderName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_UserID" type="xs:int" />
+        <xs:element minOccurs="0" name="_Token" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Save_GenderResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Save_CivilStatus">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CivilStatusID" type="xs:int" />
+        <xs:element minOccurs="0" name="CivilStatusName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_UserID" type="xs:int" />
+        <xs:element minOccurs="0" name="_Token" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Save_CivilStatusResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Save_SystemModules">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ModuleID" type="xs:int" />
+        <xs:element minOccurs="0" name="ModuleName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ModuleDescription" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ModuleURL" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_UserID" type="xs:int" />
+        <xs:element minOccurs="0" name="_Token" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Save_SystemModulesResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Save_Office">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="OfficeID" type="xs:int" />
+        <xs:element minOccurs="0" name="OfficeCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="OfficeName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="OfficeAddress" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ContactNo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Active" type="xs:boolean" />
+        <xs:element minOccurs="0" name="_UserID" type="xs:int" />
+        <xs:element minOccurs="0" name="_Token" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Save_OfficeResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Save_Department">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DepartmentID" type="xs:int" />
+        <xs:element minOccurs="0" name="DepartmentCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="DepartmentName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Active" type="xs:boolean" />
+        <xs:element minOccurs="0" name="_UserID" type="xs:int" />
+        <xs:element minOccurs="0" name="_Token" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Save_DepartmentResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Validate_Token">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UserID" type="xs:int" />
+        <xs:element minOccurs="0" name="TokenID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Validate_TokenResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Validate_TokenResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Get_TransactionHistory">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_Parameter" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_UserID" type="xs:int" />
+        <xs:element minOccurs="0" name="_Token" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Get_TransactionHistoryResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Get_TransactionHistoryResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Save_TransactionHistory">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UserID" type="xs:int" />
+        <xs:element minOccurs="0" name="FormName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="EventName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ExceptionError" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="TransactionLogs" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ComputerName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="IPAddress" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Save_TransactionHistoryResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

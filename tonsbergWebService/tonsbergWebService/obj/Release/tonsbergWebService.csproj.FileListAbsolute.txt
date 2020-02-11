@@ -1,0 +1,9 @@
+C:\Users\Argee\Desktop\20171025 Tonsberg Project WinApp\Tonsberg System\WebService\tonsbergWebService\tonsbergWebService\bin\tonsbergWebService.dll
+C:\Users\Argee\Desktop\20171025 Tonsberg Project WinApp\Tonsberg System\WebService\tonsbergWebService\tonsbergWebService\bin\tonsbergWebService.pdb
+C:\Users\Argee\Desktop\20171025 Tonsberg Project WinApp\Tonsberg System\WebService\tonsbergWebService\tonsbergWebService\bin\Newtonsoft.Json.dll
+C:\Users\Argee\Desktop\20171025 Tonsberg Project WinApp\Tonsberg System\WebService\tonsbergWebService\tonsbergWebService\bin\tonsberg_DataAccess.dll
+C:\Users\Argee\Desktop\20171025 Tonsberg Project WinApp\Tonsberg System\WebService\tonsbergWebService\tonsbergWebService\bin\tonsberg_DataAccess.pdb
+C:\Users\Argee\Desktop\20171025 Tonsberg Project WinApp\Tonsberg System\WebService\tonsbergWebService\tonsbergWebService\bin\Newtonsoft.Json.xml
+C:\Users\Argee\Desktop\20171025 Tonsberg Project WinApp\Tonsberg System\WebService\tonsbergWebService\tonsbergWebService\obj\Release\tonsbergWebService.csprojResolveAssemblyReference.cache
+C:\Users\Argee\Desktop\20171025 Tonsberg Project WinApp\Tonsberg System\WebService\tonsbergWebService\tonsbergWebService\obj\Release\tonsbergWebService.dll
+C:\Users\Argee\Desktop\20171025 Tonsberg Project WinApp\Tonsberg System\WebService\tonsbergWebService\tonsbergWebService\obj\Release\tonsbergWebService.pdb

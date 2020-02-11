@@ -1,0 +1,5 @@
+C:\Users\Argee\Desktop\20171025 Tonsberg Project WinApp\Tonsberg System\WebService\tonsbergWebService\tonsberg_DataAccess\bin\Debug\tonsberg_DataAccess.dll
+C:\Users\Argee\Desktop\20171025 Tonsberg Project WinApp\Tonsberg System\WebService\tonsbergWebService\tonsberg_DataAccess\bin\Debug\tonsberg_DataAccess.pdb
+C:\Users\Argee\Desktop\20171025 Tonsberg Project WinApp\Tonsberg System\WebService\tonsbergWebService\tonsberg_DataAccess\obj\Debug\tonsberg_DataAccess.csprojResolveAssemblyReference.cache
+C:\Users\Argee\Desktop\20171025 Tonsberg Project WinApp\Tonsberg System\WebService\tonsbergWebService\tonsberg_DataAccess\obj\Debug\tonsberg_DataAccess.dll
+C:\Users\Argee\Desktop\20171025 Tonsberg Project WinApp\Tonsberg System\WebService\tonsbergWebService\tonsberg_DataAccess\obj\Debug\tonsberg_DataAccess.pdb

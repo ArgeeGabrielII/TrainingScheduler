@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tonsbergWebService", "tonsbergWebService\tonsbergWebService.csproj", "{DC8A562F-7C13-4FE8-ACAA-855312022CAC}"
+	ProjectSection(ProjectDependencies) = postProject
+		{506BF90D-FC6C-4415-B237-73D2E7AB9D7A} = {506BF90D-FC6C-4415-B237-73D2E7AB9D7A}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tonsberg_DataAccess", "tonsberg_DataAccess\tonsberg_DataAccess.csproj", "{506BF90D-FC6C-4415-B237-73D2E7AB9D7A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DC8A562F-7C13-4FE8-ACAA-855312022CAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC8A562F-7C13-4FE8-ACAA-855312022CAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC8A562F-7C13-4FE8-ACAA-855312022CAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC8A562F-7C13-4FE8-ACAA-855312022CAC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{506BF90D-FC6C-4415-B237-73D2E7AB9D7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{506BF90D-FC6C-4415-B237-73D2E7AB9D7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{506BF90D-FC6C-4415-B237-73D2E7AB9D7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{506BF90D-FC6C-4415-B237-73D2E7AB9D7A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
